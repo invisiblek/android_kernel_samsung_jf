@@ -157,6 +157,7 @@ obj-$(CONFIG_FELICA) += felica/
 ifeq (1, $(shell if [ -d ../../../../../../kernel/drivers/exfat ] ; then echo 1 ; fi))
 	obj-y   += exfat/
 endif
+obj-$(CONFIG_ESOC)		+= esoc/
 
 #sensor_class
 obj-$(CONFIG_SENSORS)		+= sensors/
